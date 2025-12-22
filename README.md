@@ -307,44 +307,6 @@ function MyForm() {
 }
 ```
 
-## Comparison with Original Implementation
-
-### Before (with Effect.js)
-
-```typescript
-import { Effect } from 'effect';
-
-class EventService {
-  emit = <T>(eventType: string, data: T): Effect.Effect<void, never, never> => {
-    return Effect.sync(() => {
-      // emit logic
-    });
-  };
-}
-
-// Usage
-Effect.runSync(Effect.provide(emitEffect, EventServiceLayer));
-```
-
-### After (Pure TypeScript)
-
-```typescript
-class EventService {
-  emit<T>(eventType: string, data: T): void {
-    // emit logic
-  }
-}
-
-// Usage
-eventService.emit('event', data);
-```
-
-**Benefits:**
-- Simpler API
-- No Effect.js dependency
-- Better performance (no Effect runtime overhead)
-- Easier to understand and maintain
-
 ## License
 
 MIT
