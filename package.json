@@ -1,0 +1,52 @@
+{
+  "name": "broadcast-event-system",
+  "version": "1.0.0",
+  "description": "Type-safe event bus and broadcast service for React applications",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "event-bus",
+    "events",
+    "broadcast",
+    "react",
+    "typescript",
+    "pub-sub"
+  ],
+  "author": "Kwon KyoungMin <lanos0609@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./core": {
+      "import": "./dist/esm/core/index.js",
+      "require": "./dist/core/index.js",
+      "types": "./dist/core/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/esm/react/index.js",
+      "require": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
+    }
+  }
+}
