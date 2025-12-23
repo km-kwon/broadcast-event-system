@@ -1,6 +1,6 @@
 {
   "name": "broadcast-event-system",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Type-safe event bus and broadcast service for React applications",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
@@ -24,6 +24,14 @@
   ],
   "author": "Kwon KyoungMin <lanos0609@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/km-kwon/broadcast-event-system.git"
+  },
+  "homepage": "https://github.com/km-kwon/broadcast-event-system#readme",
+  "bugs": {
+    "url": "https://github.com/km-kwon/broadcast-event-system/issues"
+  },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
   },
