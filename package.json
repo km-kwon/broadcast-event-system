@@ -1,6 +1,6 @@
 {
   "name": "broadcast-event-system",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Type-safe event bus and broadcast service for React applications",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",

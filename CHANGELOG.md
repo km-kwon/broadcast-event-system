@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2025-12-26
+
+### Added
+- Comprehensive test suite using Vitest and React Testing Library (122 tests)
+- 100% test coverage across all modules (EventService, BroadcastService, all React hooks)
+- GitHub Actions CI/CD pipeline with Node.js 18, 20, and 22 support
+- Codecov integration for automated coverage reporting
+- Coverage and CI badges in README
+- Testing documentation section in README
+
+### Changed
+- Updated development dependencies for testing infrastructure
+- Added test scripts to package.json (test, test:watch, test:ui, test:coverage)
+
 ## [1.0.3] - 2025-12-23
 
 ### Changed
@@ -36,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Zero dependencies (React as peer dependency)
 - Comprehensive documentation
 
+[1.0.4]: https://github.com/km-kwon/broadcast-event-system/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/km-kwon/broadcast-event-system/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/km-kwon/broadcast-event-system/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/km-kwon/broadcast-event-system/compare/v1.0.0...v1.0.1
