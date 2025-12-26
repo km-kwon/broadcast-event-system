@@ -1,5 +1,10 @@
 # broadcast-event-system
 
+[![npm version](https://img.shields.io/npm/v/broadcast-event-system.svg)](https://www.npmjs.com/package/broadcast-event-system)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/km-kwon/broadcast-event-system/actions/workflows/ci.yml/badge.svg)](https://github.com/km-kwon/broadcast-event-system/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/km-kwon/broadcast-event-system/branch/main/graph/badge.svg)](https://codecov.io/gh/km-kwon/broadcast-event-system)
+
 Type-safe event bus and broadcast service for React applications. Pure TypeScript implementation with zero dependencies (except React for hooks).
 
 ## Features
